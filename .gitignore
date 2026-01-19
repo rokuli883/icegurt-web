@@ -1,0 +1,14 @@
+# Documentos de sistema
+.DS_Store
+Thumbs.db
+
+# Dependencias (si se agregan en el futuro)
+node_modules/
+dist/
+build/
+
+# Logs
+*.log
+
+# Entorno local
+.env
