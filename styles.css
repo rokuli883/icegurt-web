@@ -21,14 +21,9 @@
 }
 
 body {
-    background-color: var(--mint-bg);
-    /* Patrón Wavy Checkered real */
-    background-image: url('bg_v4.png');
-    background-size: 600px;
-    /* Tamaño balanceado */
-    background-repeat: repeat;
-    /* background-attachment eliminado para que se mueva con el scroll */
-    /* Esto hace que el fondo se quede quieto al hacer scroll, dando sensación de uniformidad */
+    background-color: #ffffff;
+    /* Fondo limpio solicitado por el usuario */
+    /* background-image: url('bg_v4.png'); */
 
     font-family: var(--font-body);
     color: var(--petrol-dark);
