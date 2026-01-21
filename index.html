@@ -37,58 +37,50 @@
 
         <!-- SECCIÓN 1: CREA TU ICEGURT -->
         <section class="menu-section">
-            <h2 class="section-title">✨ Crea tu Icegurt ✨</h2>
+            <h2 class="section-title">Crea tu Icegurt</h2>
 
             <div class="product-grid">
                 <!-- Pequeño S -->
-                <article class="product-card" data-name="Icegurt Pequeño" data-price="7500">
+                <article class="product-card" data-name="Frozen S" data-price="7500" data-type="frozen">
                     <div class="icon-wrapper">
-                        <img src="product_frozen_s.png" alt="Icegurt Pequeño">
+                        <img src="product_frozen_s.png" alt="Frozen S">
                     </div>
-                    <h3>PEQUEÑO</h3>
+                    <h3>Frozen S</h3>
                     <div class="price-tag">$7.500</div>
                     <button class="add-btn">AGREGAR <span>+</span></button>
                 </article>
 
                 <!-- Mediano M -->
-                <article class="product-card" data-name="Icegurt Mediano" data-price="8500">
+                <article class="product-card" data-name="Frozen M" data-price="8500" data-type="frozen">
                     <div class="icon-wrapper">
-                        <img src="product_frozen_m.png" alt="Icegurt Mediano">
+                        <img src="product_frozen_m.png" alt="Frozen M">
                     </div>
-                    <h3>MEDIANO</h3>
+                    <h3>Frozen M</h3>
                     <div class="price-tag">$8.500</div>
                     <button class="add-btn">AGREGAR <span>+</span></button>
                 </article>
 
                 <!-- Grande L -->
-                <article class="product-card" data-name="Icegurt Grande" data-price="9500">
+                <article class="product-card" data-name="Frozen L" data-price="9500" data-type="frozen">
                     <div class="icon-wrapper">
-                        <img src="product_frozen_l.png" alt="Icegurt Grande">
+                        <img src="product_frozen_l.png" alt="Frozen L">
                     </div>
-                    <h3>GRANDE</h3>
+                    <h3>Frozen L</h3>
                     <div class="price-tag">$9.500</div>
                     <button class="add-btn">AGREGAR <span>+</span></button>
                 </article>
             </div>
 
-            <div class="adiciones-list">
-                <h3>👇 Elige tus Adiciones</h3>
-                <div class="adiciones-grid">
-                    <button class="add-btn-small" data-name="Adición Básica" data-price="2500">Básica ($2.5k)</button>
-                    <button class="add-btn-small" data-name="Adición Premium" data-price="3000">Premium ($3k)</button>
-                    <button class="add-btn-small" data-name="Adición Gold" data-price="4500">Gold ($4.5k)</button>
-                    <button class="add-btn-small" data-name="Cubierta" data-price="4000">Cubierta ($4k)</button>
-                </div>
-            </div>
+
         </section>
 
         <!-- SECCIÓN 2: BOWLS -->
         <section class="menu-section">
-            <h2 class="section-title">🍓 Bowls 🍫</h2>
+            <h2 class="section-title">Bowls</h2>
             <div class="product-grid">
 
                 <!-- Bowl Waffle -->
-                <article class="product-card" data-name="Bowl Waffle" data-price="16000">
+                <article class="product-card" data-name="Bowl Waffle" data-price="16000" data-type="bowl_waffle">
                     <div class="icon-wrapper">
                         <img src="product_bowl_waffle.png" alt="Icegurt Waffle">
                     </div>
@@ -99,7 +91,7 @@
                 </article>
 
                 <!-- Bowl Brownie -->
-                <article class="product-card" data-name="Bowl Brownie" data-price="16000">
+                <article class="product-card" data-name="Bowl Brownie" data-price="16000" data-type="bowl_brownie">
                     <div class="icon-wrapper">
                         <img src="product_bowl_brownie.png" alt="Icegurt Brownie">
                     </div>
@@ -110,7 +102,7 @@
                 </article>
 
                 <!-- Bowl Griego -->
-                <article class="product-card" data-name="Bowl Griego" data-price="17000">
+                <article class="product-card" data-name="Bowl Griego" data-price="17000" data-type="bowl_griego">
                     <div class="icon-wrapper contain">
                         <img src="product_bowl_griego.png" alt="Icegurt Bowl Griego">
                     </div>
@@ -126,7 +118,7 @@
 
         <!-- SECCIÓN 3: BEBIDAS Y CLÁSICOS -->
         <section class="menu-section">
-            <h2 class="section-title">🍦 Clásicos 🥤</h2>
+            <h2 class="section-title">Clásicos</h2>
             <div class="product-grid">
                 <!-- Brownie Con Helado (Reemplaza Cono) -->
                 <article class="product-card" data-name="Brownie Con Helado" data-price="16000">
@@ -139,7 +131,7 @@
                 </article>
 
                 <!-- Smoothie o Malteada -->
-                <article class="product-card" data-name="Malteada" data-price="12000">
+                <article class="product-card" data-name="Malteada" data-price="12000" data-type="malteada">
                     <div class="icon-wrapper contain">
                         <img src="product_malteada.png" alt="Malteada">
                     </div>
@@ -149,7 +141,7 @@
                     <button class="add-btn">AGREGAR <span>+</span></button>
                 </article>
                 <!-- Parfait -->
-                <article class="product-card" data-name="Parfait" data-price="16000">
+                <article class="product-card" data-name="Parfait" data-price="16000" data-type="parfait">
                     <div class="icon-wrapper">
                         <img src="product_parfait.png" alt="Icegurt Parfait">
                     </div>
@@ -171,19 +163,76 @@
             </div>
         </section>
 
+        <!-- SECCIÓN 4: TOPPINGS (Movido al final) -->
+        <section class="menu-section">
+            <div class="adiciones-list" style="margin-top: 50px;">
+                <h3 style="margin-bottom: 25px;">Toppings</h3>
+                <div class="adiciones-grid">
+                    <button class="add-btn-small" data-name="Topping Clásico" data-price="2500"
+                        data-type="topping_clasico">Clásicos ($2.5k)</button>
+                    <button class="add-btn-small" data-name="Topping Premium" data-price="3000"
+                        data-type="topping_premium">Premium ($3k)</button>
+                    <button class="add-btn-small" data-name="Topping Gold" data-price="4500"
+                        data-type="topping_gold">Gold ($4.5k)</button>
+                    <button class="add-btn-small" data-name="Coberturas" data-price="4000"
+                        data-type="cubierta">Coberturas
+                        ($4k)</button>
+                    <button class="add-btn-small" data-name="Coberturas Gold" data-price="6000"
+                        data-type="cubierta_gold">Coberturas Gold ($6k)</button>
+                </div>
+            </div>
+
     </main>
 
     <footer class="sticky-cart" id="sticky-cart">
-        <div class="cart-summary">
+        <div class="cart-summary" id="cart-summary-btn">
             <div class="cart-items">0 ítems</div>
             <div class="cart-total">$0</div>
+            <div class="view-cart-text">Ver Carrito ▲</div>
         </div>
         <button id="whatsapp-btn" class="whatsapp-btn">
-            Pedir Hoy 🚀
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"
+                style="margin-right:8px;">
+                <path
+                    d="M12.031 2C6.50854 2 2.00854 6.50202 2.00854 12.029C2.00854 13.7891 2.46824 15.4265 3.28441 16.8837L2 21.6508L6.86877 20.366C8.28383 21.1378 9.90483 21.5794 11.609 21.5794H11.6133C17.1352 21.5794 21.6353 17.078 21.6353 11.5516C21.6353 8.99912 20.642 6.60061 18.8359 4.80036C17.0426 3.01353 14.6366 2.01633 12.031 2ZM12.031 20.0678V20.0637C10.4287 20.0637 8.87813 19.6387 7.51954 18.832L7.19965 18.6416L3.90306 19.5052L4.77974 16.294L4.57147 15.9626C3.69343 14.5682 3.23232 12.9698 3.23232 11.3413V11.3366C3.23232 6.78604 7.1805 3.08541 12.0353 3.08541C14.3857 3.08541 16.5947 4.0016 18.2144 5.66442C19.8335 7.32785 20.7259 9.53744 20.7259 11.8988C20.7259 16.4487 16.7771 20.0678 12.031 20.0678Z"
+                    fill="white" stroke="white" stroke-width="0.5" />
+            </svg>
+            Ordenar
         </button>
     </footer>
 
-    <script src="script.js?v=3"></script>
+    <!-- MODAL DETALLE DEL CARRITO -->
+    <div id="cart-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" id="close-cart-modal">&times;</button>
+            <h3>Tu Pedido</h3>
+            <div id="cart-items-container" class="cart-list">
+                <!-- Items inyectados con JS -->
+            </div>
+            <div class="cart-modal-footer">
+                <div class="modal-total">Total: <span id="modal-cart-total">$0</span></div>
+                <button id="modal-checkout-btn" class="whatsapp-btn full-width">
+                    Confirmar Pedido en WhatsApp
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL DE SELECCIÓN -->
+    <div id="selection-modal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal" id="close-selection-modal">&times;</button>
+            <h3 id="modal-product-title">Personaliza tu pedido</h3>
+            <div id="modal-options-container">
+                <!-- Las opciones se inyectarán aquí con JS -->
+            </div>
+            <div class="modal-actions">
+                <button id="confirm-add-btn" class="add-btn">CONFIRMAR Y AGREGAR</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js?v=4"></script>
 </body>
 
 </html>
