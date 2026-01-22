@@ -1,6 +1,7 @@
 :root {
     --mint-bg: #E0F7F6;
-    --turquoise-main: #6DC0C3;
+    --turquoise-main: #67b4be;
+    /* Updated from user image */
     --petrol-dark: #0E5E63;
     --red-pop: #FF6B6B;
     --yellow-fun: #FFD93D;
@@ -21,7 +22,8 @@
 }
 
 body {
-    background-color: #ffffff;
+    background-color: #fae3e6;
+    /* Slightly darker pink for better visibility */
     /* Fondo limpio solicitado por el usuario */
     /* background-image: url('bg_v4.png'); */
 
@@ -34,13 +36,12 @@ body {
 
 /* --- Typo & Header --- */
 .main-header {
-    background: var(--glass);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    background-color: #f8d4d8;
+    /* Solid pink extracted from logo */
     padding: 1.5rem 1rem 3rem;
     text-align: center;
     border-radius: 0 0 50% 50% / 0 0 30px 30px;
-    box-shadow: 0 10px 30px rgba(109, 192, 195, 0.2);
+    box-shadow: 0 10px 30px rgba(103, 180, 190, 0.2);
     margin-bottom: 3rem;
     position: relative;
     z-index: 10;
@@ -48,10 +49,19 @@ body {
 }
 
 .logo-container {
-    max-width: 250px;
+    max-width: 350px;
+    /* Increased size */
     margin: 0 auto;
     transform-origin: center;
     animation: float 6s ease-in-out infinite;
+}
+
+.main-logo {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 15px;
+    /* Soften edges if it's a card */
 }
 
 .tagline {
@@ -129,7 +139,7 @@ body {
     background: #fff;
     border-radius: 50%;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(109, 192, 195, 0.3);
+    box-shadow: 0 5px 15px rgba(103, 180, 190, 0.3);
     border: 4px solid var(--mint-bg);
 }
 
@@ -188,8 +198,10 @@ body {
 .add-btn {
     width: 100%;
     border: none;
-    background: var(--petrol-dark);
-    color: var(--white);
+    background: #f8d4d8;
+    /* Pink from header */
+    color: var(--petrol-dark);
+    /* Dark text for contrast */
     font-family: var(--font-heading);
     padding: 0.8rem;
     border-radius: 15px;
@@ -482,7 +494,7 @@ body {
     background: var(--mint-bg);
     border-color: var(--turquoise-main);
     color: var(--petrol-dark);
-    box-shadow: 0 2px 5px rgba(109, 192, 195, 0.3);
+    box-shadow: 0 2px 5px rgba(103, 180, 190, 0.3);
 }
 
 .modal-actions {

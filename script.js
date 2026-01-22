@@ -70,6 +70,13 @@ const LIST_TOPPINGS_GOLD = ['Ferrero Chocolate', 'Marañon', 'Nuez de Brasil', '
 const LIST_CUBIERTAS = ['Chocolate', 'Chocolate blanco', 'Chocolate sugarfree', 'Chocolate con crispy', 'Chocolate Hershey', 'Chocolate maní'];
 const LIST_CUBIERTAS_GOLD = ['Chocolate de pistachos'];
 
+// Sub-categorías para productos específicos (Musly, Bowls, etc)
+const LIST_FRUTAS = ['Fresa', 'Mora', 'Maracuta', 'Mango', 'Durazno', 'Kiwi', 'Arándanos', 'Cereza', 'Lyche'];
+const LIST_CEREALES = ['Granola de chocolate', 'Granola de fresa', 'Granola de almendras', 'Granola normal', 'Zucaritas', 'Chococrispys'];
+
+// Lista completa de Todos los Toppings (Unión de listas)
+const LIST_TODOS_TOPPINGS = [...LIST_TOPPINGS_CLASIC, ...LIST_TOPPINGS_PREMIUM, ...LIST_TOPPINGS_GOLD];
+
 // Configuración de Productos Personalizables
 const productsConfig = {
     'frozen': {
@@ -124,7 +131,7 @@ const productsConfig = {
                 name: 'Toppings (Elige 2)',
                 type: 'checkbox',
                 limit: 2,
-                choices: ['Fresa', 'Banano', 'Mango', 'Durazno', 'Arándanos', 'Kiwi']
+                choices: LIST_TODOS_TOPPINGS
             },
             {
                 name: 'Salsas',
@@ -140,7 +147,7 @@ const productsConfig = {
                 name: 'Toppings (Elige 2)',
                 type: 'checkbox',
                 limit: 2,
-                choices: ['Fresa', 'Banano', 'Mango', 'Durazno', 'Mani', 'Coco']
+                choices: LIST_TODOS_TOPPINGS
             },
             {
                 name: 'Salsas',
@@ -156,12 +163,12 @@ const productsConfig = {
                 name: 'Frutas (Elige 2)',
                 type: 'checkbox',
                 limit: 2,
-                choices: ['Fresa', 'Banano', 'Mango', 'Durazno', 'Arándanos']
+                choices: LIST_FRUTAS
             },
             {
                 name: 'Cereal',
                 type: 'radio',
-                choices: ['Granola', 'Zucaritas', 'Chococrispis']
+                choices: LIST_CEREALES
             }
         ]
     },
@@ -172,13 +179,13 @@ const productsConfig = {
                 name: 'Frutas (Elige 2)',
                 type: 'checkbox',
                 limit: 2,
-                choices: ['Fresa', 'Banano', 'Mango', 'Durazno', 'Kiwi']
+                choices: LIST_FRUTAS
             },
             {
                 name: 'Toppings (Elige 2)',
                 type: 'checkbox',
                 limit: 2,
-                choices: ['Mani', 'Coco', 'Granola', 'Chococrispys', 'Zucaritas']
+                choices: LIST_TODOS_TOPPINGS
             },
             {
                 name: 'Salsas',
@@ -234,6 +241,27 @@ const productsConfig = {
                 name: 'Sabores',
                 type: 'radio',
                 choices: LIST_CUBIERTAS_GOLD
+            }
+        ]
+    },
+    'musly': {
+        title: 'Arma tu Musly',
+        options: [
+            {
+                name: 'Frutas (Elige 2)',
+                type: 'checkbox',
+                limit: 2,
+                choices: LIST_FRUTAS
+            },
+            {
+                name: 'Cereal',
+                type: 'radio',
+                choices: LIST_CEREALES
+            },
+            {
+                name: 'Salsas',
+                type: 'radio',
+                choices: ['Chocolate', 'Arequipe', 'Leche Condensada', 'Mora']
             }
         ]
     }
